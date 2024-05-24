@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman by J. R. Masias</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-neutral-900">
+    <main>
+      <!-- Hangman art goes here -->
+      <section class="flex justify-center items-center mt-10 md:mt-20">
+        <img
+          src="hangman_start.png"
+          alt="Hangman art"
+          class="w-40 md:w-80 hangman-art"
+        />
+      </section>
+
+      <!-- Word gets populated here as blank lines -->
+      <div class="flex justify-center mt-10 md:mt-24 gap-3 guess-holder"></div>
+
+      <!-- Alphabet selection -->
+      <div
+        class="grid grid-cols-7 lg:grid-cols-12 justify-center items-center mt-10 md:mt-24 gap-6 alphabet p-10 xl:px-64 2xl:px-96"
+      ></div>
+
+      <!-- Reset button -->
+      <div class="flex justify-center items-center mt-10 md:mt-20">
+        <a
+          href="index.html"
+          class="bg-green-600 px-6 py-3 text-white text-2xl rounded-xl md:hover:bg-green-500"
+        >
+          Reset
+        </a>
+      </div>
+    </main>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
